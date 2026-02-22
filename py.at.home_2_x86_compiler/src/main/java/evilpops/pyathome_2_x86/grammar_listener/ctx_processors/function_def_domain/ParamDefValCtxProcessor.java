@@ -33,7 +33,7 @@ public class ParamDefValCtxProcessor {
 
         if (
                 ctx.varType() != null
-                        && numExpDataType.equals(
+                        && !numExpDataType.equals(
                         TypesContextProcessor.convertTypingCtxToDataType(
                                 ctx.varType().types()
                         )
