@@ -126,6 +126,7 @@ public class AssemblyCodeFormats {
                     "\tmovq -24(%rbp), %rdi\t\n" +
                     "\tcall strlen@plt\n" +
                     "\taddq %rax, %r10\n\n" +
+                    "\taddq $1, %r10\n\n" +
                     "\tmovq %r10, %rdi\n" +
                     "\tcall malloc@plt\n" +
                     "\tmovq %rax, -32(%rbp)\t\n\n" +
@@ -154,6 +155,7 @@ public class AssemblyCodeFormats {
                     "\tcmpq $0, %r10 \n" +
                     "\tje SM_EMPTY_RES\t\n\n" +
                     "\timulq -24(%rbp), %r10\n\n" +
+                    "\taddq $1, %r10\n\n" +
                     "\tmovq %r10, %rdi\n" +
                     "\tcall malloc@plt\n" +
                     "\tmovq %rax, -32(%rbp)\n\n" +
