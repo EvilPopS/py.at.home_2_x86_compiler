@@ -64,7 +64,7 @@ public class AssemblyCodeFormats {
     public static final String FLOAT_ZERO_DATA_SEC = "\t" + FLOAT_ZERO + ": .double 0.0\n";
     public static final String NONE_LIT_DATA_SEC = "\t" + NONE_LIT + ": .asciz \"None\"\n";
     public static final String UNDEFINED_LIT_DATA_SEC = "\t" + UNDEFINED_LIT + ": .asciz \"Undefined\"\n";
-    public static final String PRINT_INT_OR_BOOL_DATA_SEC = "\t" + PRINT_INT_OR_BOOL + ": .asciz \"%d\\n\"\n";
+    public static final String PRINT_INT_OR_BOOL_DATA_SEC = "\t" + PRINT_INT_OR_BOOL + ": .asciz \"%ld\\n\"\n";
     public static final String PRINT_FLOAT_DATA_SEC = "\t" + PRINT_FLOAT + ": .asciz \"%.3f\\n\"\n";
     public static final String PRINT_STRING_DATA_SEC = "\t" + PRINT_STRING + ": .asciz \"%s\\n\"\n";
     public static final String DATA_SECTION_INIT =
