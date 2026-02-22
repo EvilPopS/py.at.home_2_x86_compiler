@@ -66,9 +66,10 @@ public class AssignStatementCtxProcessor {
                 (symTabController.checkIfIsLiteral(numExpRef) && !is64bit)
                         || symTabController.checkIfIsVar(numExpRef)
         ) {
+            int oldNumExpRef = numExpRef;
             numExpRef = symTabController.takeRegister(numExpDataType);
             assemblyGenerator.genMoveSymbolToReg(
-                    AssemblySymbolProcessor.createAssemblySymbol(numExpRef),
+                    AssemblySymbolProcessor.createAssemblySymbol(oldNumExpRef),
                     symTabController.getRegName(numExpRef),
                     is64bit
 
